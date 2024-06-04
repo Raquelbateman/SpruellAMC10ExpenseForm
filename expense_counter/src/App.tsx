@@ -23,8 +23,9 @@ const App = () => {
   return (
     <>
       <h1 className="text-center">Expense Tracker</h1>
+      <ExpenseFilter onSelectCategory={category => console.log(category)}/>
     <ExpenseList expenses={dummyExpensesArray} onDelete={handleDelete}/>
-    <ExpenseFilter/>
+  
     </>
   )
 }
