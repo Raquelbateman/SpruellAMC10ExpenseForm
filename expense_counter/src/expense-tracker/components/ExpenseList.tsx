@@ -2,7 +2,7 @@
 const ExpenseList = () => {
   return (
     <>
-    
+  
     
     
     </>
