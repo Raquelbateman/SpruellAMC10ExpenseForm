@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ExpenseList from "./expense-tracker/components/ExpenseList"
+import ExpenseFilter from "./expense-tracker/components/ExpenseFilter"
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <>
       <h1 className="text-center">Expense Tracker</h1>
     <ExpenseList expenses={dummyExpensesArray} onDelete={handleDelete}/>
+    <ExpenseFilter/>
     </>
   )
 }
