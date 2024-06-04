@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <h1 className="text-center">Expense Tracker</h1>
-    <ExpenseList/>
+    <ExpenseList onDelete={(id) => console.log ('Delete', id)}/>
     </>
   )
 }
