@@ -3,6 +3,11 @@ import ExpenseList from "./expense-tracker/components/ExpenseList"
 
 
 const App = () => {
+  const handleDelete = () =>{
+
+
+    
+  }
   const [dummyExpensesArray, setDummyExpensesArray] = useState([
     {id: 1, description: 'aaa', amount:10, category:'Utilities'},
     {id: 2, description: 'bbb', amount:15, category:'Entertainment'},
