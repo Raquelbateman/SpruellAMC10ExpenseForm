@@ -1,3 +1,5 @@
+
+
 interface Expense{
     id:number,
     description: string,
@@ -29,7 +31,9 @@ const ExpenseList = ({expenses,onDelete}: ExpenseProps) => {
         <td>{expense.description}</td>
         <td>{expense.amount}</td>
         <td>{expense.category}</td>
-        <td></td>
+        <td>
+            <button className="btn btn-outline-danger" onClick={() => onDelete(expense.id)}>Delete</button>
+        </td>
 
 
 
@@ -38,6 +42,14 @@ const ExpenseList = ({expenses,onDelete}: ExpenseProps) => {
 
 
   </tbody>
+  <tfoot>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+  </tfoot>
 </table>
     
     </>
