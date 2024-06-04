@@ -25,7 +25,15 @@ const ExpenseList = ({expenses,onDelete}: ExpenseProps) => {
     </tr>
   </thead>
   <tbody>
-    {expenses.map(expense => <tr key = {expense.id}></tr>)}
+    {expenses.map(expense => <tr key = {expense.id}>
+        <td>{expense.description}</td>
+        <td>{expense.amount}</td>
+        <td>{expense.category}</td>
+        <td></td>
+
+
+
+    </tr>)}
 
 
 
