@@ -1,9 +1,15 @@
+interface FilterProps{
+    onSelectCategory: (category: string) => void;
+
+    }
 
 
-const ExpenseFilter = () => {
+const ExpenseFilter = ({onSelectCategory}:FilterProps) => {
   return (
     <>
-    <select className="form-select">
+
+
+    <select className="form-select" onChange={(e) => onSelectCategory(e.target.value)}>
   <option value="">All Categories</option>
   <option value="Groceries">Groceries</option>
   <option value="Utilies">Utilies</option>
