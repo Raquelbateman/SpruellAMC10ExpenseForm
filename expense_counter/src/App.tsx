@@ -23,10 +23,10 @@ const App = () => {
   return (
     <>
       <h1 className="text-center">Expense Tracker</h1>
-      <div>
+      <div className="mb-5">
       <ExpenseFilter onSelectCategory={category => console.log(category)}/>
       </div>
-      <div>
+      <div className="mb-5">
     <ExpenseList expenses={dummyExpensesArray} onDelete={handleDelete}/>
     </div>
   
