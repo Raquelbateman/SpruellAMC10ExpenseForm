@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <>
-      <h1 className="text-center">Expense Tracker</h1>
+      <h1 className="text-center mb-5">Expense Tracker</h1>
       <div className="mb-5">
       <ExpenseFilter onSelectCategory={category => console.log(category)}/>
       </div>
