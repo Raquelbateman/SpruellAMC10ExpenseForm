@@ -21,7 +21,8 @@ const App = () => {
 
     
   }
-
+  //create a variable with a turnary operator
+  //we are going to use our selected category as a boolean
 
   
   return (
