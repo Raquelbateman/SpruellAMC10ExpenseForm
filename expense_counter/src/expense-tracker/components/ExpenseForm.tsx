@@ -3,7 +3,9 @@
 const ExpenseForm = () => {
   return (
     <>
-    
+    <form action="">
+
+    </form>
     
     
     
