@@ -32,7 +32,7 @@ const App = () => {
       <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
       </div>
       <div className="mb-5">
-    <ExpenseList expenses={dummyExpensesArray} onDelete={handleDelete}/>
+    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
     </div>
   
     </>

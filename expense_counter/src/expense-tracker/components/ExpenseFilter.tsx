@@ -12,7 +12,7 @@ const ExpenseFilter = ({onSelectCategory}:FilterProps) => {
     <select className="form-select" onChange={(e) => onSelectCategory(e.target.value)}>
   <option value="">All Categories</option>
   <option value="Groceries">Groceries</option>
-  <option value="Utilies">Utilies</option>
+  <option value="Utilities">Utilies</option>
   <option value="Entertainment">Entertainment</option>
   <option value="Food">Food</option>
   <option value="Shopping">Shopping</option>
