@@ -5,6 +5,9 @@ import ExpenseFilter from "./expense-tracker/components/ExpenseFilter"
 
 const App = () => {
 
+  //Create a useState to help us handle out selections
+  const [selectedcategory, setSelectedCategory] = useState("")
+
   const [dummyExpensesArray, setDummyExpensesArray] = useState([
     {id: 1, description: 'aaa', amount:10, category:'Utilities'},
     {id: 2, description: 'bbb', amount:15, category:'Entertainment'},
@@ -20,11 +23,12 @@ const App = () => {
   }
 
 
+  
   return (
     <>
       <h1 className="text-center mb-5">Expense Tracker</h1>
       <div className="mb-5">
-      <ExpenseFilter onSelectCategory={category => console.log(category)}/>
+      <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
       </div>
       <div className="mb-5">
     <ExpenseList expenses={dummyExpensesArray} onDelete={handleDelete}/>
