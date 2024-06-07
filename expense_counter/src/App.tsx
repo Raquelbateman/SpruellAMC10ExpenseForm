@@ -6,7 +6,7 @@ import ExpenseFilter from "./expense-tracker/components/ExpenseFilter"
 const App = () => {
 
   //Create a useState to help us handle out selections
-  const [selectedcategory, setSelectedCategory] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("")
 
   const [dummyExpensesArray, setDummyExpensesArray] = useState([
     {id: 1, description: 'aaa', amount:10, category:'Utilities'},
@@ -22,8 +22,8 @@ const App = () => {
     
   }
   //create a variable with a turnary operator
-  //we are going to use our selected category as a boolean
-
+  //we are going to use our selected category as a boolean filter through our dummyExpensesArray
+  const visibleExpense = selectedCategory ? dummyExpensesArray.filter(e => e.category === selectedCategory): dummyExpensesArray;
   
   return (
     <>
