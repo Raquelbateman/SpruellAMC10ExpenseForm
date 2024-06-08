@@ -5,6 +5,7 @@ import ExpenseForm from "./expense-tracker/components/ExpenseForm"
 
 export const categories = ['Groceries', 'Utilities', 'Entertainment', 'Food', 'Shopping'];
 
+//
 const App = () => {
 
   //Create a useState to help us handle out selections
@@ -30,6 +31,12 @@ const App = () => {
   return (
     <>
       <h1 className="text-center mb-5">Expense Tracker</h1>
+    <div>
+    <ExpenseForm/>
+      
+    </div>
+
+
       <div className="mb-5">
       <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
       </div>
@@ -37,7 +44,7 @@ const App = () => {
     <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
   
     </div>
-    <ExpenseForm/>
+  
   
     </>
   )
