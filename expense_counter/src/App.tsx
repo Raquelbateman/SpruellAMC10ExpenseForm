@@ -31,7 +31,7 @@ const App = () => {
   return (
     <>
       <h1 className="text-center mb-5">Expense Tracker</h1>
-    <div>
+    <div className="m-5">
     <ExpenseForm/>
       
     </div>
