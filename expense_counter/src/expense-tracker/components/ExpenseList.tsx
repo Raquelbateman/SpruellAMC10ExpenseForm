@@ -18,7 +18,7 @@ const ExpenseList = ({expenses,onDelete}: ExpenseProps) => {
     <>
  
 
-  <table className="mainContainer">
+  <table id="mainList">
   <thead>
     <tr>
       <th scope="col">Description</th>
@@ -33,7 +33,7 @@ const ExpenseList = ({expenses,onDelete}: ExpenseProps) => {
         <td>{expense.amount}</td>
         <td>{expense.category}</td>
         <td>
-            <button className="btn btn-outline-danger" onClick={() => onDelete(expense.id)}>Delete</button>
+            <button className="btn btn-outline" id="button" onClick={() => onDelete(expense.id)}>Delete</button>
         </td>
 
 

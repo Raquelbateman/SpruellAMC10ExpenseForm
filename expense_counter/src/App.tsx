@@ -37,11 +37,11 @@ const App = () => {
     </div>
 
    
-      <div className="">
-      {/* <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
-      </div>
-      <div className="">
-    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/> */}
+      {/* <div className="">
+      <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
+      </div> */}
+      <div id="">
+    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
   
     </div>
     

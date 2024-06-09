@@ -26,7 +26,22 @@ border-radius: 6%;
 border: 3px solid black;
 } 
 
-.mb-3 {
+#mainList{
+ margin-left: 900px;
+ margin-top:-500px;
+ font-size: 40px;
+ color:rgba(226, 243, 228);
+ 
+}
+
+#button{
+  background-color: #e075e1;
+  color: rgba(226, 243, 228);
+  width:80px;
+  font-size: 25px;
+}
+
+.mb-2 {
   text-align: left;
   padding-left: 30px;
   padding-right:30px;
