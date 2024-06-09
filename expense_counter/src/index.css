@@ -1,4 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
 body{
-  background-color: rgba(0, 0, 0, 0.444);
-  color:aliceblue;
+  background-image: url("./Media/Images/expenseBackground.jpg");
+  color: hsla(114, 100%, 37%);
+  font-family: "Mouse Memoirs", sans-serif;
+  font-weight: 800px;
+  font-style: normal;
+  background-size: 900px 600px; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+#trackerTitle{
+  font-size: 80px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+#mainContainer{
+
+background-color: hsla(114, 100%, 37%, 0.4);
+width:640px;
+height:500px;
+border-radius: 6%;
+border: 3px solid black;
+} 
+
+.mb-3 {
+  text-align: center;
+  color:hsla(127, 78%, 82%,);
+}
+
+
+#DAC-category{
+  width:500px;
+  padding-left: 30px;
+  font-size: 50px;
+
+}
+#expensePhone{
+  display:flex;
+  justify-content: center;
+  background-image:url("./Media/Images/expensePhone.png");
+  background-repeat: none;
+  height:1900px;
+  width:950px;
+  position: absolute;
+  margin-bottom: 500px;
+}
+
+#expensePhone  tr {
+  margin: 5px 0;
 }

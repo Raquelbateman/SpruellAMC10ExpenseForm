@@ -10,7 +10,6 @@ const App = () => {
 
   //Create a useState to help us handle out selections
   const [selectedCategory, setSelectedCategory] = useState("")
-
   const [dummyExpensesArray, setDummyExpensesArray] = useState([
     {id: 1, description: 'aaa', amount:10, category:'Utilities'},
     {id: 2, description: 'bbb', amount:15, category:'Entertainment'},
@@ -30,21 +29,22 @@ const App = () => {
   
   return (
     <>
-      <h1 className="text-center mb-5">Expense Tracker</h1>
-    <div className="m-5">
+      <div className="text-center mb-2" id="trackerTitle">Expense Tracker</div>
+    <div className="m-2" id="DAC-category">
+      <div id="mainContainer">
     <ExpenseForm/>
-      
+    </div>
     </div>
 
-
-      <div className="mb-5">
-      <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
+   
+      <div className="">
+      {/* <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
       </div>
-      <div className="mb-5">
-    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
+      <div className="">
+    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/> */}
   
     </div>
-  
+    
   
     </>
   )
