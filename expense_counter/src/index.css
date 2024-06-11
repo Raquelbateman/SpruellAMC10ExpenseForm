@@ -31,7 +31,14 @@ border: 3px solid black;
  margin-top:-500px;
  font-size: 40px;
  color:rgba(226, 243, 228);
- 
+ column-gap: 20px;
+}
+
+#mainFilter{
+ width:420px;
+margin-left:920px;
+margin-top:-490px;
+border-style: double;
 }
 
 #button{

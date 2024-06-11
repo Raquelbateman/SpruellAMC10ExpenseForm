@@ -11,11 +11,11 @@ const App = () => {
   //Create a useState to help us handle out selections
   const [selectedCategory, setSelectedCategory] = useState("")
   const [dummyExpensesArray, setDummyExpensesArray] = useState([
-    {id: 1, description: 'aaa', amount:10, category:'Utilities'},
-    {id: 2, description: 'bbb', amount:15, category:'Entertainment'},
-    {id: 3, description: 'ccc', amount:20, category:'Shopping'},
-    {id: 4, description: 'ddd', amount:25, category:'Food'},
-    {id: 5, description: 'eee', amount:16, category:'Groceries'}
+    {id: 1, description: 'Water', amount:10, category:'Utilities'},
+    {id: 2, description: 'Concerts', amount:15, category:'Entertainment'},
+    {id: 3, description: 'Sneakers', amount:20, category:'Shopping'},
+    {id: 4, description: 'Sushi', amount:25, category:'Food'},
+    {id: 5, description: 'Seafood', amount:16, category:'Groceries'}
   ])
 
   const handleDelete = (id:number) =>{
@@ -37,13 +37,13 @@ const App = () => {
     </div>
 
    
-      {/* <div className="">
+      <div className="">
       <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
-      </div> */}
-      <div id="">
+      </div>
+      {/* <div id="">
     <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
   
-    </div>
+    </div> */}
     
   
     </>
