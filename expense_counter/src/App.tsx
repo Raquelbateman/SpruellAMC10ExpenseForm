@@ -35,15 +35,15 @@ const App = () => {
     <ExpenseForm/>
     </div>
     </div>
-
+    <div id="">
+    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
+  
+    </div>
    
       <div className="">
       <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
       </div>
-      {/* <div id="">
-    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
   
-    </div> */}
     
   
     </>

@@ -9,50 +9,90 @@ body{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
 #trackerTitle{
   font-size: 90px;
-  color: #e075e1;
-  opacity: none;
+  color:#f45983;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color:rgba(226, 243, 228);
 }
+
+#pullDown{
+ color: #f45983;
+ -webkit-text-stroke-width: .6px;
+ -webkit-text-stroke-color:rgba(226, 243, 228);
+}
+
 
 #mainContainer{
 
-background-color:hsl(299, 38%, 46%,0.6);
+background-color:hsl(1, 96%, 78%,0.7);
 width:640px;
 height:500px;
 border-radius: 6%;
-border: 3px solid black;
+border: 3px solid rgba(226, 243, 228);
 } 
 
+
+.table :not(caption) > * > * {
+  background-color:hsl(1, 96%, 78%,0.7);
+  border-radius: 6%;
+  color:rgba(226, 243, 228);
+
+}
+.tableHeadFooter {
+  color: rgba(226, 243, 228)!important;
+  background-color: #e97e69 !important;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color:#f45983;
+}
+
+#categoryFont{
+  color:rgba(226, 243, 228);
+  -webkit-text-stroke-width: .6px;
+  -webkit-text-stroke-color:#f45983;
+  font-size: 30px;
+}
+
 #mainList{
- margin-left: 900px;
- margin-top:-500px;
- font-size: 40px;
- color:rgba(226, 243, 228);
- column-gap: 20px;
+color: #f45982d2;
+ margin-left: 780px;
+ margin-top:-460px;
+ width:630px;
+ height:400px;
+ font-size: 30px;
+
 }
 
 #mainFilter{
- width:420px;
-margin-left:920px;
-margin-top:-490px;
-border-style: double;
+width:630px;
+margin-left:780px;
+margin-top:-460px;
+color:#f45983;
+
 }
 
 #button{
-  background-color: #e075e1;
+  background-color: #e97e69;
   color: rgba(226, 243, 228);
-  width:80px;
-  font-size: 25px;
+  width:60px;
+  font-size: 20px;
+  -webkit-text-stroke-width: .6px;
+  -webkit-text-stroke-color:#f45983;
+}
+
+#button:hover{
+  background-image: linear-gradient(to left, #e175b5, #e17588);
 }
 
 .mb-2 {
   text-align: left;
   padding-left: 30px;
   padding-right:30px;
-  color:rgba(226, 243, 228, 0.9);
+   margin-left: 20px;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:#f45982d2;
+   color: rgba(226, 243, 228);
 }
 
 
@@ -61,18 +101,4 @@ border-style: double;
   padding-left: 30px;
   font-size: 50px;
 
-}
-#expensePhone{
-  display:flex;
-  justify-content: center;
-  background-image:url("./Media/Images/expensePhone.png");
-  background-repeat: none;
-  height:1900px;
-  width:950px;
-  position: absolute;
-  margin-bottom: 500px;
-}
-
-#expensePhone  tr {
-  margin: 5px 0;
 }
