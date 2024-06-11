@@ -1,10 +1,10 @@
-import { categories } from "../../App";
+import categories from "../Categories";
 
 const ExpenseForm = () => {
   return (
     <>
     
-      <form action=""></form>
+      <form action="">
       <div className="mb-2">
         <label htmlFor="description" className="form-label">Description</label>
         <input id="description" type="text" className="form-control" />
@@ -23,6 +23,8 @@ const ExpenseForm = () => {
         </select>
       
       </div>
+      <button className="btn btn-outline" id="submitButton" onClick={() => onDelete(expense.id)}>Add Expense</button>
+      </form>
     </>
   );
 };
