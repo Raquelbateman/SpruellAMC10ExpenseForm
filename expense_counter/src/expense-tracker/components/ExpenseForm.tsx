@@ -23,7 +23,7 @@ const ExpenseForm = () => {
         </select>
       
       </div>
-      <button className="btn btn-outline" id="submitButton" onClick={() => onDelete(expense.id)}>Add Expense</button>
+      <button className="btn btn-outline" id="submitButton">Add Expense</button>
       </form>
     </>
   );
