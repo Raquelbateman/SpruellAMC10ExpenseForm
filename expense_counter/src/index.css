@@ -8,6 +8,7 @@ body{
   background-size: 1489px 745px; 
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  overflow: hidden;
 }
 
 #trackerTitle{
@@ -28,9 +29,9 @@ body{
 #mainContainer{
 
 background-color:hsl(1, 96%, 78%,0.7);
-width:640px;
+width:630px;
 height:500px;
-margin-left: 25px;
+margin-left: 65px;
 border-radius: 6%;
 border: 3px solid rgba(226, 243, 228);
 } 
@@ -58,9 +59,9 @@ border: 3px solid rgba(226, 243, 228);
 }
 
 #mainFilter{
-  width:630px;
+  width:610px;
   position: fixed !important;
-  margin-left:780px;
+  margin-left:795px;
   margin-top:-500px;
   color :#f45983!important;
   -webkit-text-stroke-width: 2px;
@@ -69,9 +70,9 @@ border: 3px solid rgba(226, 243, 228);
 
 #mainList{
 color: #f45982d2;
- margin-left: 780px;
+ margin-left: 795px;
  margin-top:-460px;
- width:630px;
+ width:610px;
  height:400px;
  font-size: 30px;
  position: relative !important;

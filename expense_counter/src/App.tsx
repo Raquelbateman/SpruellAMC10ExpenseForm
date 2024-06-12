@@ -31,29 +31,34 @@ const App = () => {
   
   return (
     <>
-      <div className="text-center mb-2" id="trackerTitle">Expense Tracker</div>
-    
-      <div className="mainContainer" id="mainContainer">
-    <ExpenseForm onSubmit={(expense) =>
-                  setExpenses([
-                    ...expenses,
-                    { ...expense, id: expenses.length + 1 },
-                  ])
-                }/>
-    </div>
-    
-    <div id="">
-    <ExpenseList expenses={visibleExpenses} onDelete={handleDelete}/>
-  
-    </div>
    
-      <div className="">
-      <ExpenseFilter onSelectCategory={category => setSelectedCategory(category)}/>
+        <div className="text-center mb-2" id="trackerTitle">
+          Expense Tracker
+        </div>
+
+        <div className="mainContainer" id="mainContainer">
+          <ExpenseForm
+            onSubmit={(expense) =>
+              setExpenses([
+                ...expenses,
+                { ...expense, id: expenses.length + 1 },
+              ])
+            }
+          />
+        </div>
+   
+
+    <div className="row">
+    <div className="col">
+        <ExpenseFilter
+          onSelectCategory={(category) => setSelectedCategory(category)}
+        />
+      
+        <ExpenseList expenses={visibleExpenses} onDelete={handleDelete} />
+       
       </div>
-  
-    
-  
-    </>
+    </div>
+  </>
   )
 }
 
