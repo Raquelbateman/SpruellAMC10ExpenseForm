@@ -95,11 +95,11 @@ color:#f45983;
 }
 
 #submitButton:hover{
-  background-image: blue;
+  background-image: linear-gradient(to right, #f45983, #e97e69);
 
 }
 #button:hover{
-  background-image: blue;
+  background-image: linear-gradient(to right, #f45983, #e97e69);
 }
 
 .form-label {
