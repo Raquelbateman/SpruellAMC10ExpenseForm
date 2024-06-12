@@ -100,12 +100,11 @@ color:#f45983;
 }
 
 #formEdit{ 
+  font-size: 50px;
   padding-left: 30px;
   padding-right:30px;
-   margin-left: 20px;
+   color: rgba(226, 243, 228);
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color:#f45982d2;
-   color: rgba(226, 243, 228);
-   font-size: 50px;
 }
 
