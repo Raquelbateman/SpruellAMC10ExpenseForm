@@ -10,7 +10,7 @@ const App = () => {
 
   //Create a useState to help us handle out selections
   const [selectedCategory, setSelectedCategory] = useState("")
-  const [dummyExpensesArray, setDummyExpensesArray] = useState([
+  const [expenses, setExpenses] = useState([
     {id: 1, description: 'Water', amount:10, category:'Utilities'},
     {id: 2, description: 'Concerts', amount:15, category:'Entertainment'},
     {id: 3, description: 'Sneakers', amount:20, category:'Shopping'},
@@ -18,25 +18,32 @@ const App = () => {
     {id: 5, description: 'Seafood', amount:16, category:'Groceries'}
   ])
 
-  const handleDelete = (id:number) =>{
-    setDummyExpensesArray(dummyExpensesArray.filter(expense => expense.id !== id));
+  const visibleExpenses = selectedCategory
+  ? expenses.filter((e) => e.category === selectedCategory)
+  : expenses;
 
-    
-  }
+  const handleDelete = (id: number) => {
+    setExpenses(expenses.filter((expense) => expense.id !== id));
+  };
+
   //create a variable with a turnary operator
   //we are going to use our selected category as a boolean filter through our dummyExpensesArray
-  const visibleExpense = selectedCategory ? dummyExpensesArray.filter(e => e.category === selectedCategory): dummyExpensesArray;
   
   return (
     <>
       <div className="text-center mb-2" id="trackerTitle">Expense Tracker</div>
     <div className="m-2">
       <div id="mainContainer">
-    <ExpenseForm/>
+    <ExpenseForm onSubmit={(expense) =>
+                  setExpenses([
+                    ...expenses,
+                    { ...expense, id: expenses.length + 1 },
+                  ])
+                }/>
     </div>
     </div>
     <div id="">
-    <ExpenseList expenses={visibleExpense} onDelete={handleDelete}/>
+    <ExpenseList expenses={visibleExpenses} onDelete={handleDelete}/>
   
     </div>
    
