@@ -51,6 +51,7 @@ border: 3px solid rgba(226, 243, 228);
   color:rgba(226, 243, 228);
   -webkit-text-stroke-width: .6px;
   -webkit-text-stroke-color:#f45983;
+  margin-bottom:140px;
   font-size: 30px;
 }
 
@@ -103,6 +104,7 @@ color:#f45983;
 
 .form-label {
   font-size: 50px;
+  margin-top:5px;
   padding-left: 30px;
   padding-right:30px;
    color: rgba(226, 243, 228);
