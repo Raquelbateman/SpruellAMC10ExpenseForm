@@ -4,9 +4,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 const schema = z.object({
-  description: z.string().trim().min(2, { message: "Field Required" }),
-  amount: z.number().int().min(1, { message: "Field Required" }),
-  category: z.string().nonempty({ message: "Please Select a Category" }),
+  description: z.string().trim().min(2, { message: "Description: Enter at least 2 characters" }),
+  amount: z.number().int().min(1, { message: "Amount must be a number and at least 0" }),
+  category: z.string().nonempty({ message: "Category: Please select a category" }),
 });
 
 type FormData = z.infer<typeof schema>;
