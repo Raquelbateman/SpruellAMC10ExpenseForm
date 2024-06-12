@@ -13,7 +13,8 @@
 3. Style your app in your own unique way.
 
 4. Make sure to push to github multiple times each day.
-<br><br>
+<br>
+
 <b>GitHub:</b>https://github.com/Raquelbateman/SpruellAMC10ExpenseForm/tree/main<br><br>
 <br>
 
