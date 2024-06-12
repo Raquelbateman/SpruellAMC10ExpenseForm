@@ -1,4 +1,4 @@
-# <b>Mini Challenge 10 - Expense App Validation w/zod react hook forms</b>
+# <b>Mini Challenge 10 - Expense App Validation w/ Zod React Hook Forms</b>
 
 
 <b>Name: </b> Alicia Spruell<br>
@@ -14,7 +14,7 @@
 
 4. Make sure to push to github multiple times each day.
 <br><br>
-<strong>GitHub: </strong> https://github.com/dljimenez2324/MC10ExpenseAppValidate <br><br>
+<strong>GitHub: </strong>https://github.com/Raquelbateman/SpruellAMC10ExpenseForm/tree/main<br><br>
 <br>
 
 
