@@ -32,8 +32,8 @@ const App = () => {
   return (
     <>
       <div className="text-center mb-2" id="trackerTitle">Expense Tracker</div>
-    <div className="m-2">
-      <div id="mainContainer">
+    
+      <div className="mainContainer" id="mainContainer">
     <ExpenseForm onSubmit={(expense) =>
                   setExpenses([
                     ...expenses,
@@ -41,7 +41,7 @@ const App = () => {
                   ])
                 }/>
     </div>
-    </div>
+    
     <div id="">
     <ExpenseList expenses={visibleExpenses} onDelete={handleDelete}/>
   

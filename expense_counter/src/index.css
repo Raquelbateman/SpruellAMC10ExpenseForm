@@ -57,6 +57,16 @@ border: 3px solid rgba(226, 243, 228);
   font-size: 30px;
 }
 
+#mainFilter{
+  width:630px;
+  position: fixed !important;
+  margin-left:780px;
+  margin-top:-500px;
+  color :#f45983!important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:#f45982d2;
+  }
+
 #mainList{
 color: #f45982d2;
  margin-left: 780px;
@@ -64,18 +74,11 @@ color: #f45982d2;
  width:630px;
  height:400px;
  font-size: 30px;
+ position: relative !important;
 
 }
 
-#mainFilter{
-width:630px;
-margin-left:780px;
-margin-top:-500px;
-color :#f45983!important;
--webkit-text-stroke-width: 2px;
--webkit-text-stroke-color:#f45982d2;
 
-}
 
 #button{
   background-image: linear-gradient(to left, #e175b5, #e17588);
@@ -84,6 +87,7 @@ color :#f45983!important;
   font-size: 20px;
   -webkit-text-stroke-width: .6px;
   -webkit-text-stroke-color:#f45983;
+  z-index: 1;
 }
 
 #submitButton{
