@@ -30,7 +30,7 @@ const App = () => {
   return (
     <>
       <div className="text-center mb-2" id="trackerTitle">Expense Tracker</div>
-    <div className="m-2" id="DAC-category">
+    <div className="m-2">
       <div id="mainContainer">
     <ExpenseForm/>
     </div>

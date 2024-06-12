@@ -84,33 +84,28 @@ color:#f45983;
 #submitButton{
   background-color: #e97e69;
   color: rgba(226, 243, 228);
-  width:90px;
-  height:70px;
+  width:100px;
+  height:60px;
   font-size: 20px;
-  margin-left:520px;
+  margin-left:400px;
   -webkit-text-stroke-width: .6px;
   -webkit-text-stroke-color:#f45983;
 }
 
-
+#submitButton:hover{
+  background-image: linear-gradient(to left, #e175b5, #e17588)
+}
 #button:hover{
   background-image: linear-gradient(to left, #e175b5, #e17588);
 }
 
-.mb-2 {
-  text-align: left;
+#formEdit{ 
   padding-left: 30px;
   padding-right:30px;
    margin-left: 20px;
    -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color:#f45982d2;
    color: rgba(226, 243, 228);
+   font-size: 50px;
 }
 
-
-#DAC-category{
-  width:500px;
-  padding-left: 30px;
-  font-size: 50px;
-
-}
