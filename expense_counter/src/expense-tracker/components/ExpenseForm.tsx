@@ -16,7 +16,7 @@ const ExpenseForm = () => {
         <label htmlFor="category" className="form-label">Category</label>
         <select id="category" className="form-control">
         <option value=""></option>
-        {categories.map(category => <option key={category}>{category}</option>)}
+        {categories.map(category => <option key={category} className="filterForm">{category}</option>)}
 
 
         </select>

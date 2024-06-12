@@ -29,6 +29,7 @@ body{
 background-color:hsl(1, 96%, 78%,0.7);
 width:640px;
 height:500px;
+margin-left: 25px;
 border-radius: 6%;
 border: 3px solid rgba(226, 243, 228);
 } 
@@ -69,7 +70,7 @@ color: #f45982d2;
 width:630px;
 margin-left:780px;
 margin-top:-500px;
-color:#f45983;
+color :#f45983!important;
 
 }
 
@@ -116,6 +117,12 @@ color:#f45983;
   width:550px;
   height:45px;
   margin-left:30px;
+  color:#f45983!important;
+  -webkit-text-stroke-color: #f45982d2;
+}
+
+.filterForm{
+  color:#f45983!important;
 }
 
 
