@@ -14,7 +14,7 @@
 
 4. Make sure to push to github multiple times each day.
 <br><br>
-<strong>GitHub:</strong>https://github.com/Raquelbateman/SpruellAMC10ExpenseForm/tree/main<br><br>
+<b>GitHub:</b>https://github.com/Raquelbateman/SpruellAMC10ExpenseForm/tree/main<br><br>
 <br>
 
 
