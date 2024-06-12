@@ -19,7 +19,8 @@ body{
 
 #pullDown{
  color: #f45983;
- -webkit-text-stroke-width: .6px;
+ font-size: 16px;
+ -webkit-text-stroke-width: .2px;
  -webkit-text-stroke-color:rgba(226, 243, 228);
 }
 
@@ -71,6 +72,8 @@ width:630px;
 margin-left:780px;
 margin-top:-500px;
 color :#f45983!important;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:#f45982d2;
 
 }
 
