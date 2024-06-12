@@ -6,9 +6,8 @@ body{
   font-weight: 800px;
   font-style: normal;
   background-size: 1489px 745px; 
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   overflow: hidden;
+  color:#f45983;
 }
 
 #trackerTitle{
@@ -84,7 +83,8 @@ color: #f45982d2;
 #button{
   background-image: linear-gradient(to left, #e175b5, #e17588);
   color: rgba(226, 243, 228);
-  width:60px;
+  margin-left:30px;
+  width:85px;
   font-size: 20px;
   -webkit-text-stroke-width: .6px;
   -webkit-text-stroke-color:#f45983;
@@ -95,10 +95,10 @@ color: #f45982d2;
   background-image: linear-gradient(to left, #e175b5, #e17588);
   color: rgba(226, 243, 228);
   width:100px;
-  height:50px;
+  height:45px;
   font-size: 20px;
   margin-left:480px;
-  margin-top:10px;
+  margin-top:5px;
   -webkit-text-stroke-width: .6px;
   -webkit-text-stroke-color:#f45983;
 }
@@ -112,8 +112,8 @@ color: #f45982d2;
 }
 
 .form-label {
-  font-size: 50px;
-  margin-top:5px;
+  font-size: 45px;
+  margin-top:-2px;
   padding-left: 30px;
   padding-right:30px;
    color: rgba(226, 243, 228);
@@ -123,15 +123,22 @@ color: #f45982d2;
 
 .form-control{
   width:550px;
-  height:45px;
+  height:40px;
   margin-left:30px;
+  margin-top:-13px;
   color:#f45983!important;
-  -webkit-text-stroke-color: #f45982d2;
+  -webkit-text-stroke-color: #f45982d2!important;
 }
 
 .filterForm{
   color:#f45983!important;
+  font-size: large;
 }
 
-
+.validationText{
+  margin-left:33px;
+  margin-top:-4px;
+  font-size: 20px;
+  color:#AB506D;
+}
 

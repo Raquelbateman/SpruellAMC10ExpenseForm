@@ -4,9 +4,9 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 const schema = z.object({
-  description: z.string().trim().min(1, { message: "Field Required" }),
+  description: z.string().trim().min(2, { message: "Field Required" }),
   amount: z.number().int().min(1, { message: "Field Required" }),
-  category: z.string(),
+  category: z.string().nonempty({ message: "Please Select a Category" }),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -19,14 +19,13 @@ const ExpenseForm = ({ onSubmit }: ExpenseFormProps) => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mt-1">
+        <div className="description">
           <label htmlFor="description" className="form-label">
             Description
           </label>
@@ -36,27 +35,27 @@ const ExpenseForm = ({ onSubmit }: ExpenseFormProps) => {
             type="text"
             className="form-control"
           />
+          {errors.description && (
+            <p className="validationText">{errors.description.message}</p>
+          )}
         </div>
-        <div className="mb-1">
+        <div className="amount">
           <label htmlFor="amount" className="form-label">
             Amount
           </label>
           <input
-            {...register("amount", { valueAsNumber: true })}
+            {...register('amount', {valueAsNumber: true})} 
             id="amount"
             type="number"
             className="form-control"
           />
+          {errors.amount && <p className="validationText">{errors.amount.message}</p>}
         </div>
-        <div className="mb-1">
+        <div className="category">
           <label htmlFor="category" className="form-label">
             Category
           </label>
-          <select
-            {...register("category")}
-            id="category"
-            className="form-control"
-          >
+          <select {...register("category")} id="category" className="form-control">
             <option value=""></option>
             {categories.map((category) => (
               <option key={category} className="filterForm">
@@ -64,13 +63,11 @@ const ExpenseForm = ({ onSubmit }: ExpenseFormProps) => {
               </option>
             ))}
           </select>
-          {errors.category && (
-            <p className="text-danger">{errors.category.message}</p>
-          )}
-        </div>
-        <button className="btn btn-outline" id="submitButton">
+          {errors.category && <p className="validationText">{errors.category.message}</p>}
+          <button className="btn btn-outline" id="submitButton">
           Add Expense
         </button>
+        </div>
       </form>
     </>
   );
