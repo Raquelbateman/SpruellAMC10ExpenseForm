@@ -5,7 +5,7 @@ import { z } from "zod";
 
 const schema = z.object({
   description: z.string().trim().min(2, { message: "Description: Enter at least 2 characters" }),
-  amount: z.number().int().min(1, { message: "Amount must be a number and at least 0" }),
+  amount: z.number({ message: "Amount must be a number and at least 0" }),
   category: z.string().nonempty({ message: "Category: Please select a category" }),
 });
 
@@ -21,6 +21,7 @@ const ExpenseForm = ({ onSubmit }: ExpenseFormProps) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
+  console.log(errors);
 
   return (
     <>
